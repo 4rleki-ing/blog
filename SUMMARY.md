@@ -50,10 +50,16 @@
 * [HackTheBox](ciberseguridad/hackthebox.md)
 * [PentesterLab](ciberseguridad/pentesterlab.md)
 * [Bug Bounty](ciberseguridad/bug-bounty/README.md)
+  * [Reconocimiento](ciberseguridad/bug-bounty/reconocimiento/README.md)
+    * [Subfinder](ciberseguridad/bug-bounty/reconocimiento/subfinder.md)
   * [Vulnerabilidades](ciberseguridad/bug-bounty/vulnerabilidades/README.md)
     * [IDOR](ciberseguridad/bug-bounty/vulnerabilidades/idor.md)
-    * [SSRF](ciberseguridad/bug-bounty/vulnerabilidades/ssrf.md)
+    * [SQL Injection](ciberseguridad/bug-bounty/vulnerabilidades/sql-injection.md)
+    * [Buffer Overflow](ciberseguridad/bug-bounty/vulnerabilidades/buffer-overflow.md)
+    * [Falsificación de Solicitudes del lado del Servidor (SSRF)](ciberseguridad/bug-bounty/vulnerabilidades/falsificacion-de-solicitudes-del-lado-del-servidor-ssrf.md)
     * [Inyección de Comandos al Sistema Operativo](ciberseguridad/bug-bounty/vulnerabilidades/inyeccion-de-comandos-al-sistema-operativo.md)
+    * [RCE](ciberseguridad/bug-bounty/vulnerabilidades/rce.md)
+    * [Cross-Site Scripting (XSS)](ciberseguridad/bug-bounty/vulnerabilidades/cross-site-scripting-xss.md)
 
 ## Biblioteca
 
