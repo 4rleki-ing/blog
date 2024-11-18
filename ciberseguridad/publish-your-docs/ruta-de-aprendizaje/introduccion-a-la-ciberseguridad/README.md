@@ -2,6 +2,7 @@
 description: >-
   Comprenda qué es la seguridad ofensiva y defensiva, y aprenda sobre las
   carreras disponibles en cibernética.
+icon: head-side-gear
 layout:
   title:
     visible: true

@@ -30,7 +30,7 @@ Los paquetes son una forma eficiente de comunicar datos a través de dispositivo
 
 Por ejemplo, al cargar una imagen de un sitio web, esta imagen no se envía a su computadora en su conjunto, sino más bien pequeñas partes donde se reconstruye en su computadora. Tome la imagen a continuación como una ilustración de este proceso. La imagen del gato se divide en tres paquetes, donde se reconstruye cuando llega al ordenador para formar la imagen final.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_0649_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_0649_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 Los paquetes tienen diferentes estructuras que dependen del tipo de paquete que se envía. Como veremos más adelante, las redes están llenas de estándares y protocolos que actúan como un conjunto de reglas sobre cómo se maneja el paquete en un dispositivo. Con miles de millones de dispositivos conectados a Internet, las cosas pueden colapsar rápidamente si no hay estandarización
 
@@ -100,7 +100,7 @@ A continuación, hablaremos del _apretón de manos de tres vías,_ el término q
 
 El siguiente diagrama muestra un proceso normal de apretón de manos de tres vías entre Alice y Bob. En la vida real, esto sería entre dos dispositivos.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_01058_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_01058_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
 
 A los datos enviados se les asigna una secuencia numérica aleatoria y se reconstruyen utilizando esta secuencia numérica y aumentando en 1. Ambas computadoras deben coincidir en la misma secuencia numérica para que los datos se envíen en el orden correcto. Este pedido se acuerda a través de tres etapas:
 
@@ -124,7 +124,7 @@ Para iniciar el cierre de una conexión TCP, el dispositivo enviará un paquete 
 
 Vamos a mostrar este proceso usando a Alice y Bob como lo hemos hecho anteriormente.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_01226_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_01226_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
 
 En la ilustración, podemos ver que Alice le ha enviado a Bob un paquete "FIN". Debido a que Bob recibió esto, le hará saber a Alice que lo recibió y que también quiere cerrar la conexión (usando FIN). Alice ha escuchado a Bob alto y claro y le hará saber a Bob que lo reconoce.
 
@@ -174,7 +174,7 @@ A continuación, discutiremos cómo el proceso de una conexión a través de UDP
 
 El siguiente diagrama muestra una conexión UDP normal entre Alice y Bob. En la vida real, esto sería entre dos dispositivos.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_01612_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_01612_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 

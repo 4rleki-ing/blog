@@ -24,11 +24,11 @@ El reenvío de puertos es un componente esencial para conectar aplicaciones y se
 
 Tomemos como ejemplo la siguiente red. Dentro de esta red, el servidor con una dirección IP de "192.168.1.10" ejecuta un servidor web en el puerto 80. Solo los otros dos equipos de esta red podrán acceder a ella (esto se conoce como intranet).
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_0442_tryhackme.com.jpeg" alt="" width="506"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_0442_tryhackme.com.jpeg" alt="" width="506"><figcaption></figcaption></figure>
 
 Si el administrador quisiera que el sitio web fuera accesible al público (utilizando Internet), tendría que implementar el reenvío de puertos, como se muestra en el siguiente diagrama:
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_04447_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_04447_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 Con este diseño, la red #2 ahora podrá acceder al servidor web que se ejecuta en la red #1 utilizando la dirección IP pública de la red #1 (82.62.51.70).
 
@@ -79,7 +79,7 @@ Un **P**rivate **N**etwork (o **VPN** para abreviar) es una tecnología que perm
 
 Por ejemplo, solo los dispositivos dentro de la misma red (como dentro de una empresa) pueden comunicarse directamente. Sin embargo, una VPN permite conectar dos oficinas. Tomemos el siguiente diagrama, donde hay tres redes:
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_05124_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_05124_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 1. Red #1 (Oficina #1)
 2. Red #2 (Oficina #2)
@@ -116,7 +116,7 @@ El enrutamiento es la etiqueta que se le da al proceso de datos que viajan a tra
 
 El enrutamiento es útil cuando los dispositivos están conectados por muchas rutas, como en el diagrama de ejemplo a continuación, donde se toma la ruta más óptima:
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_05447_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_05447_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 Los routers son dispositivos dedicados y no realizan las mismas funciones que los switches.
 
@@ -148,7 +148,7 @@ Los switches pueden funcionar tanto en la capa 2 como en la capa 3 del modelo OS
 
 Tomemos, por ejemplo, un interruptor de capa 2 en el diagrama a continuación. Estos switches reenviarán tramas (recuerde que ya no son paquetes, ya que se ha eliminado el protocolo IP) a los dispositivos conectados utilizando su dirección MAC.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_0576_tryhackme.com.jpeg" alt="" width="409"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_0576_tryhackme.com.jpeg" alt="" width="409"><figcaption></figcaption></figure>
 
 Estos interruptores son los únicos responsables de enviar tramas al dispositivo correcto.
 
@@ -161,7 +161,7 @@ Echemos un vistazo al siguiente diagrama de un interruptor de capa 3 en acción.
 
 Una tecnología llamada VLAN (Virtual Local Area Network) permite que dispositivos específicos dentro de una red se dividan virtualmente. Esta división significa que todos pueden beneficiarse de cosas como una conexión a Internet, pero se tratan por separado. Esta separación de red proporciona seguridad porque significa que las reglas establecidas determinan cómo se comunican entre sí dispositivos específicos. Esta segregación se ilustra en el siguiente diagrama:
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_18-11-2024_05810_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_18-11-2024_05810_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
 
 En el contexto del diagrama anterior, el "Departamento de Ventas" y el "Departamento de Contabilidad" podrán acceder a Internet, pero no podrán comunicarse entre sí (aunque estén conectados al mismo interruptor).
 

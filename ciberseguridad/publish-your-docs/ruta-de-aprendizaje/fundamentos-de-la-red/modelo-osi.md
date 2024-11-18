@@ -22,7 +22,7 @@ layout:
 
 ## <mark style="color:orange;">¿Qué es el modelo OSI?</mark>
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_232739_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_232739_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 El modelo OSI (o Open Systems Interconnection Model) es un modelo absolutamente fundamental utilizado en redes. Este modelo crítico proporciona un marco que dicta cómo todos los dispositivos en red enviarán, recibirán e interpretarán los datos.
 
@@ -32,7 +32,7 @@ El modelo OSI consta de siete capas que se ilustran en el diagrama a continuaci�
 
 En cada capa individual por la que viajan los datos, se llevan a cabo procesos específicos y se agregan piezas de información a estos datos, que es lo que discutiremos en las próximas tareas dentro de esta sala. Sin embargo, por ahora, solo necesitamos entender que este proceso se llama encapsulación y cómo se ve el modelo OSI en el siguiente diagrama:
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_232931_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_232931_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
@@ -48,7 +48,7 @@ Esta capa es una de las más fáciles de agarrar. En pocas palabras, esta capa h
 
 Por ejemplo, los cables Ethernet que conectan dispositivos, como en la imagen a continuación:
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_233210_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_233210_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
@@ -93,7 +93,7 @@ Si bien algunos protocolos en esta capa determinan exactamente cuál es la ruta 
 
 En esta capa, todo se trata a través de direcciones IP como 192.168.1.100. Los dispositivos como los routers capaces de entregar paquetes mediante direcciones IP se conocen como dispositivos de capa 3, porque son capaces de trabajar en la tercera capa del modelo OSI.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_233741_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_233741_tryhackme.com.jpeg" alt="" width="563"><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
@@ -128,7 +128,7 @@ TCP se utiliza para situaciones como el intercambio de archivos, la navegación 
 
 En el siguiente diagrama, podemos ver cómo una imagen de un gato se descompone en pequeños fragmentos de datos (conocidos como paquetes) desde el "servidor web", donde la "computadora" reconstruye la imagen del gato en el orden correcto.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_23456_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_23456_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 Ahora pasemos al User Datagrama Protocol (o UDP para abreviar). Este protocolo no es tan avanzado como su hermano, el protocolo TCP. No cuenta con las muchas características que ofrece TCP, como la verificación de errores y la confiabilidad. De hecho, cualquier dato que se envía a través de UDP se envía a la computadora, ya sea que llegue allí o no. No hay sincronización entre los dos dispositivos ni garantía; Solo espero lo mejor y cruzamos los dedos.
 
@@ -142,7 +142,7 @@ Si bien esto suena desventajoso, tiene sus méritos, que describiremos en la sig
 
 Usando el mismo ejemplo que antes, ahora podemos ver que solo los paquetes #1 y #3 han sido recibidos por la "Computadora", lo que significa que falta la mitad de la imagen.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_234620_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_234620_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 UDP es útil en situaciones en las que se envían pequeños fragmentos de datos. Por ejemplo, los protocolos utilizados para descubrir dispositivos (_ARP_ y _DHCP_ que discutimos en [la Sala 2 - Introducción a LAN)](https://tryhackme.com/room/introtolan) o archivos más grandes como la transmisión de video (donde está bien si alguna parte del video está pixelada. ¡Los píxeles son solo fragmentos de datos perdidos!)
 
@@ -195,7 +195,7 @@ La capa de aplicación del modelo OSI es la capa con la que estará más familia
 
 Las aplicaciones cotidianas, comolos clientes de correo electrónico, los navegadores o el software de navegación del servidor de archivos, como FileZilla, proporcionan una interfazgráfica de usuario (GUI) amigable y gráfica para que los usuarios interactúen con los datos enviados o recibidos. Otros protocolos incluyen DNS (Domain Name System), que es la forma en que las direcciones de los sitios web se traducen en direcciones IP.
 
-<figure><img src="../../../.gitbook/assets/browser.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/browser.png" alt=""><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 

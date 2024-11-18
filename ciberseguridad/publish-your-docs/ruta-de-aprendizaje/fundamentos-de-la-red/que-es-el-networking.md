@@ -1,8 +1,8 @@
 ---
+icon: ethernet
 description: >-
   Comience a aprender los fundamentos de las redes informáticas en este módulo
   interactivo y breve.
-icon: ethernet
 layout:
   title:
     visible: true
@@ -39,7 +39,7 @@ Las redes están integradas en nuestra vida cotidiana. Ya sea recopilando datos 
 
 Tome el siguiente diagrama como ejemplo, ¡Alice, Bob y Jim han formado su red! Hablaremos de esto un poco más adelante.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_223519_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_223519_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 Las redes vienen en todas las formas y tamaños, que es algo que también discutiremos a lo largo de este módulo.
 
@@ -53,7 +53,7 @@ Ahora que hemos aprendido qué es una red y cómo se define en informática (sol
 
 Internet es una red gigante que consta de muchas, muchas redes pequeñas dentro de sí misma. Usando nuestro ejemplo de la tarea anterior, imaginemos ahora que Alice hizo unos nuevos amigos llamados Zayn y Toby a los que quiere presentar a Bob y Jim. El problema es que Alice es la única persona que habla el mismo idioma que Zayn y Toby. ¡Así que Alicia tendrá que ser la mensajera!
 
-<figure><img src="../../../.gitbook/assets/80f74ce74cc4e3772ed20433fb88607b (1).png" alt="" width="534"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/80f74ce74cc4e3772ed20433fb88607b (1).png" alt="" width="534"><figcaption></figcaption></figure>
 
 Debido a que Alice puede hablar ambos idiomas, pueden comunicarse entre sí a través de Alice, formando una nueva red.
 
@@ -61,7 +61,7 @@ La primera iteración de Internet fue dentro del proyecto ARPANET a finales de l
 
 Relacionemos la red de amigos de Alicia con los dispositivos informáticos. Internet parece una versión mucho más grande de este tipo de diagrama:
 
-<figure><img src="../../../.gitbook/assets/internet2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/internet2.png" alt=""><figcaption></figcaption></figure>
 
 Como se dijo anteriormente, Internet se compone de muchas redes pequeñas unidas entre sí. Estas pequeñas redes se llaman redes privadas, mientras que las redes que conectan estas pequeñas redes se llaman redes públicas, ¡o Internet! Entonces, para recapitular, una red puede ser de dos tipos:
 
@@ -92,7 +92,7 @@ Ahora podemos cambiar nuestro nombre a través de una encuesta de escritura, per
 
 En resumen, una dirección IP (o Internet Protocol) se puede utilizar como una forma de identificar un host en una red durante un período de tiempo, donde esa dirección IP se puede asociar con otro dispositivo sin que la dirección IP cambie. Primero, dividamos con precisión qué es una dirección IP en el siguiente diagrama:
 
-<figure><img src="../../../.gitbook/assets/a0de0d68641982ddf1a8c5a9f1984c4c.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/a0de0d68641982ddf1a8c5a9f1984c4c.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Una dirección IP es un conjunto de números que se dividen en cuatro octetos. El valor de cada octeto se resumirá como la dirección IP del dispositivo en la red. Este número se calcula a través de una técnica conocida como direccionamiento IP y subred, pero eso es para otro día. Lo que es importante entender aquí es que las direcciones IP pueden cambiar de un dispositivo a otro, pero no pueden estar activas simultáneamente más de una vez dentro de la misma red.
 
@@ -107,11 +107,11 @@ Una dirección pública se utiliza para identificar el dispositivo en Internet, 
 |       CMNatic-PC       |       192.168.1.74      |        Privado       |
 |       CMNatic-PC       | <p>86.157.52.21<br></p> |        Público       |
 
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1.png" alt=""><figcaption></figcaption></figure>
 
 Estos dos dispositivos podrán utilizar sus direcciones IP privadas para comunicarse entre sí. Sin embargo, cualquier dato enviado a Internet desde cualquiera de estos dispositivos se identificará mediante la misma dirección IP pública. Lasdirecciones IP públicas son proporcionadas por su proveedor de servicios deInternet (o ISP) a cambio de una tarifa mensual (¡su factura!)
 
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2.png" alt=""><figcaption></figcaption></figure>
 
 A medida que más y más dispositivos se conectan, cada vez es más difícil obtener una dirección pública que no esté ya en uso. Por ejemplo, Cisco, un gigante de la industria en el mundo de las redes, estimó que habría aproximadamente 50 mil millones de dispositivos conectados a Internet para fines de 2021. [(Cisco., 2021)](https://www.cisco.com/c/dam/en\_us/about/ac79/docs/innov/IoT\_IBSG\_0411FINAL.pdf). Introduzca las versiones de la dirección IP. Hasta ahora, solo hemos discutido una versión del esquema de direccionamiento del Protocolo de Internet conocido como IPv4, que utiliza un sistema de numeración de 2^32 direcciones IP (4.29 mil millones), ¡así que puede ver por qué hay tanta escasez!
 
@@ -122,13 +122,13 @@ IPv6 es una nueva iteración del esquema de direccionamiento del Protocolo de In
 
 En la siguiente captura de pantalla se compara una dirección IPv6 e IPv4.
 
-<figure><img src="../../../.gitbook/assets/ipv6.png" alt="" width="552"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ipv6.png" alt="" width="552"><figcaption></figcaption></figure>
 
 #### <mark style="color:yellow;">Direcciones MAC</mark>
 
 #### Todos los dispositivos de una red tendrán una interfaz de red física, que es una placa de microchip que se encuentra en la placa base del dispositivo. A esta interfaz de red se le asigna una dirección única en la fábrica en la que se construyó, llamada dirección MAC (Media Access Control). La dirección MAC es un número hexadecimal de doce caracteres (_un sistema de numeración de base dieciséis utilizado en informática para representar números_) dividido en dos y separado por dos puntos. Estos dos puntos se consideran separadores. Por ejemplo, _a4:c3:f0:85:ac:2d_. Los primeros seis caracteres representan la empresa que creó la interfaz de red y los últimos seis son un número único.
 
-<figure><img src="../../../.gitbook/assets/394caee97fb1b9f7b5a5f7a7ea0a9f71.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/394caee97fb1b9f7b5a5f7a7ea0a9f71.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Sin embargo, una cosa interesante con las direcciones MAC es que pueden ser falsificadas o "falsificadas" en un proceso conocido como suplantación de identidad. Esta suplantación de identidad se produce cuando un dispositivo en red pretende identificarse como otro mediante su dirección MAC. Cuando esto ocurre, a menudo puede romper los diseños de seguridad mal implementados que asumen que los dispositivos que hablan en una red son confiables. Tomemos el siguiente escenario: Un firewall está configurado para permitir cualquier comunicación que vaya hacia y desde la dirección MAC del administrador. Si un dispositivo pretendiera o "falsificara" esta dirección MAC, el firewall ahora pensaría que está recibiendo comunicación del administrador cuando no es así.
 
@@ -159,7 +159,7 @@ El tiempo que tardan los paquetes ICMP en viajar entre dispositivos se mide medi
 \
 Los pings se pueden realizar en dispositivos de una red, como la red doméstica o recursos como sitios web. Esta herramienta se puede usar fácilmente y viene instalada en sistemas operativos (SO) como Linux y Windows. La sintaxis para hacer un ping simple es **`ping IP address or website URL`**. Veamos esto en acción en la captura de pantalla a continuación.
 
-<figure><img src="../../../.gitbook/assets/ping1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ping1.png" alt=""><figcaption></figcaption></figure>
 
 Aquí estamos haciendo ping a un dispositivo que tiene la dirección privada de _192.168.1.254_. Ping nos informa de que hemos enviado seis paquetes ICMP, todos ellos recibidos con un tiempo medio de 4,16 milisegundos.
 

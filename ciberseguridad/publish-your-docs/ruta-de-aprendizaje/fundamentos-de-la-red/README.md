@@ -2,6 +2,7 @@
 description: >-
   Aprenda los conceptos básicos de cómo las computadoras se comunican entre sí y
   los tipos de debilidades de la red.
+icon: router
 layout:
   title:
     visible: true

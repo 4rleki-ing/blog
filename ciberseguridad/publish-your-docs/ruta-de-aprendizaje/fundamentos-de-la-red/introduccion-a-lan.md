@@ -1,6 +1,6 @@
 ---
-description: Conozca algunas de las tecnologías y diseños que impulsan las redes privadas
 icon: asterisk
+description: Conozca algunas de las tecnologías y diseños que impulsan las redes privadas
 layout:
   title:
     visible: true
@@ -24,7 +24,7 @@ layout:
 
 A lo largo de los años, ha habido experimentación e implementación de varios diseños de redes. En referencia a las redes, cuando nos referimos al término "topología", en realidad nos estamos refiriendo al diseño o aspecto de la red en cuestión. Analicemos las ventajas y desventajas de estas topologías a continuación.
 
-<figure><img src="../../../.gitbook/assets/Captura de pantalla_17-11-2024_225921_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_225921_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:yellow;">Topología en estrella</mark>
 
@@ -46,7 +46,7 @@ Sin embargo, dicho esto, las topologías de bus son una de las topologías más 
 
 Por último, otra desventaja de la topología de bus es que hay poca redundancia en caso de fallos. Esta desventaja se debe a que hay un solo punto de falla a lo largo del cable de la red troncal. Si este cable llegara a break, los dispositivos ya no pueden recibir o transmitir datos a lo largo del bus.
 
-<figure><img src="../../../.gitbook/assets/27e9ff166d2d4ad5436e27c8c9b62e6d.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/27e9ff166d2d4ad5436e27c8c9b62e6d.png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### <mark style="color:yellow;">Topología de anillo</mark>
 
@@ -58,7 +58,7 @@ Dado que solo hay una dirección para que los datos viajen a través de esta top
 
 Por último, las topologías de anillo son menos propensas a cuellos de botella, como dentro de una topología de bus, ya que se utilizan grandes cantidades de tráfico. no viajar a través de la red en ningún momento. El diseño de esta topología, sin embargo, significa que un fallo como ya que el cable cortado o el dispositivo roto resultarán en la rotura de toda la red.
 
-<figure><img src="../../../.gitbook/assets/4cea7a4b48eacbd4db0b0d5e32068596.png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/4cea7a4b48eacbd4db0b0d5e32068596.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ### <mark style="color:yellow;">¿Qué es un interruptor?</mark>
 
@@ -66,7 +66,7 @@ Los conmutadores son dispositivos dedicados dentro de una red que están diseña
 
 Los interruptores son mucho más eficientes que sus contrapartes menores (concentradores/repetidores). Los interruptores realizan un seguimiento de qué dispositivo está conectado a qué puerto. De esta manera, cuando reciben un paquete, en lugar de repetir ese paquete en cada puerto Al igual que lo haría un concentrador, simplemente lo envía al objetivo previsto, lo que reduce el tráfico de red.
 
-<figure><img src="../../../.gitbook/assets/2504bf9d718556c764c28843f43febe0.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2504bf9d718556c764c28843f43febe0.png" alt=""><figcaption></figcaption></figure>
 
 Tanto los conmutadores como los enrutadores se pueden conectar entre sí. La capacidad de hacer esto aumenta la redundancia (el fiabilidad) de una red mediante la adición de múltiples rutas para que los datos tomen. Si un camino baja, se puede usar otro. Si bien esto puede reducir el rendimiento general de una red porque los paquetes tienen que tardar más en viajar, no hay Sin tiempo de inactividad, un pequeño precio a pagar considerando la alternativa.
 
@@ -78,7 +78,7 @@ El enrutamiento es la etiqueta que se le da al proceso de datos que viajan a tra
 
 El enrutamiento es útil cuando los dispositivos están conectados por muchas rutas, como en el diagrama de ejemplo a continuación.
 
-<figure><img src="../../../.gitbook/assets/e83d39192c6a3e8168f842d9a680a7c3.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/e83d39192c6a3e8168f842d9a680a7c3.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ### <mark style="color:yellow;">Práctico</mark>
 
@@ -103,13 +103,13 @@ Tomemos un negocio, por ejemplo; Contarás con diferentes departamentos como:
 * Finanzas
 * Recursos humanos
 
-<figure><img src="../../../.gitbook/assets/dfdda87fb215cd723555bde32345e05e.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dfdda87fb215cd723555bde32345e05e.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Si bien sabes dónde enviar información en la vida real al departamento correcto, las redes también deben saberlo. Los administradores de red utilizan las subredes para categorizar y asignar partes específicas de una red para reflejar esto.
 
 La creación de subredes se logra dividiendo el número de hosts que pueden caber dentro de la red, representados por un número llamado máscara de subred. Volvamos a nuestro diagrama de la primera sala de este módulo:
 
-<figure><img src="../../../.gitbook/assets/3e3b2a9eeaf249ce0a7f4dbb46f0bd14.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/3e3b2a9eeaf249ce0a7f4dbb46f0bd14.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Como podemos recordar, una dirección IP se compone de cuatro secciones llamadas octetos. Lo mismo ocurre con una máscara de subred, que también se representa como un número de cuatro bytes (32 bits), que va de 0 a 255 (0-255).
 
@@ -175,7 +175,7 @@ Cuando se envía una solicitud ARP, se transmite un mensaje en la red a otros di
 
 Este proceso se ilustra en el siguiente diagrama:
 
-<figure><img src="../../../.gitbook/assets/2107060a6e1df30659654335b878e91a.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/2107060a6e1df30659654335b878e91a.png" alt="" width="563"><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
@@ -188,7 +188,7 @@ Este proceso se ilustra en el siguiente diagrama:
 
 Las direcciones IP se pueden asignar manualmente, introduciéndolas físicamente en un dispositivo, o de forma automática y, más comúnmente, mediante el uso de un servidor DHCP (Dynamic Host Configuration Protocol). Cuando un dispositivo se conecta a una red, si aún no se le ha asignado manualmente una dirección IP, envía una solicitud (DHCP Discover) para ver si hay servidores DHCP en la red. A continuación, el servidor DHCP responde con una dirección IP que el dispositivo podría utilizar (oferta DHCP). A continuación, el dispositivo envía una respuesta confirmando que desea la dirección IP ofrecida (solicitud DHCP) y, por último, el servidor DHCP envía una respuesta reconociendo que se ha completado y que el dispositivo puede empezar a utilizar la dirección IP (DHCP ACK).
 
-<figure><img src="../../../.gitbook/assets/0514189b8424bb6493f7b427b40425e2.png" alt="" width="477"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/0514189b8424bb6493f7b427b40425e2.png" alt="" width="477"><figcaption></figcaption></figure>
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
