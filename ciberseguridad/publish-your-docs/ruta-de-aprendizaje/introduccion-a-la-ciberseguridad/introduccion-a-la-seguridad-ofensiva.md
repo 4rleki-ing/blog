@@ -2,6 +2,7 @@
 description: >-
   Hackea tu primer sitio web (legalmente en un entorno seguro) y experimenta el
   trabajo de un hacker ético
+icon: user-hoodie
 layout:
   title:
     visible: true
@@ -37,7 +38,7 @@ Pero antes de hacer eso, repasemos respondiendo las preguntas a continuación. E
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
-¿Cuál de las siguientes opciones representa mejor el proceso en el que se simulan las acciones de un hacker para encontrar vulnerabilidades en un sistema? **`Offensive Security`**
+1. ¿Cuál de las siguientes opciones representa mejor el proceso en el que se simulan las acciones de un hacker para encontrar vulnerabilidades en un sistema? **`Offensive Security`**
 
 ## <mark style="color:orange;">Hackeando tu primera máquina</mark>
 
@@ -102,11 +103,9 @@ Su misión es transferir $ 2000 de la cuenta bancaria 2276 a su cuenta (número 
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
-Sobre el saldo de su cuenta, ahora debería ver un mensaje que indica la respuesta a esta pregunta. ¿Puedes encontrar la respuesta que necesitas? **`BANK-HACKED`**
-
-Si fueras un probador de penetración o un consultor de seguridad, este es un ejercicio que realizarías para que las empresas prueben las vulnerabilidades de sus aplicaciones web y encuentren páginas ocultas para investigar las vulnerabilidades.
-
-Termine la máquina haciendo clic en el botón rojo "Terminar" en la parte superior de la página.
+1. Sobre el saldo de su cuenta, ahora debería ver un mensaje que indica la respuesta a esta pregunta. ¿Puedes encontrar la respuesta que necesitas? **`BANK-HACKED`**
+2. Si fueras un probador de penetración o un consultor de seguridad, este es un ejercicio que realizarías para que las empresas prueben las vulnerabilidades de sus aplicaciones web y encuentren páginas ocultas para investigar las vulnerabilidades.
+3. Termine la máquina haciendo clic en el botón rojo "Terminar" en la parte superior de la página.
 
 ## <mark style="color:orange;">Carreras en ciberseguridad</mark>
 
@@ -130,4 +129,4 @@ La sala de carreras cibernéticas profundiza en las diferentes carreras en ciber
 
 #### _<mark style="color:purple;">Responda las siguientes preguntas</mark>_
 
-¡Lee lo anterior y continúa con la siguiente habitación!
+1. ¡Lee lo anterior y continúa con la siguiente habitación!
