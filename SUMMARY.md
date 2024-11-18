@@ -70,6 +70,7 @@
 
 ## Biblioteca
 
+* [Bolsa de Trabajo](biblioteca/bolsa-de-trabajo.md)
 * [Libros](biblioteca/libros.md)
 * [Aprendizaje Constante](biblioteca/aprendizaje-constante.md)
 * [Software](biblioteca/software.md)
