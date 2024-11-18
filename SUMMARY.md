@@ -70,7 +70,8 @@
   * [Comandos](sistemas-operativos/linux/comandos.md)
   * [Distros](sistemas-operativos/linux/distros/README.md)
     * [Kali](sistemas-operativos/linux/distros/kali/README.md)
-      * [Herramientas](sistemas-operativos/linux/distros/kali/herramientas.md)
+      * [Herramientas](sistemas-operativos/linux/distros/kali/herramientas/README.md)
+        * [Nmap](sistemas-operativos/linux/distros/kali/herramientas/nmap.md)
 
 ## Biblioteca
 
