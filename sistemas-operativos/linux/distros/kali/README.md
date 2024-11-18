@@ -1,10 +1,10 @@
 ---
+icon: chess-knight
 description: >-
   Kali Linux es una distribución de Linux basada en Debian, específicamente
   diseñada para temas de seguridad muy variados, como análisis de redes, ataques
   inalámbricos, análisis forenses y otros más.
-icon: chess-knight
-cover: ../../../.gitbook/assets/Portada (2).jpg
+cover: ../../../../.gitbook/assets/Portada (2).jpg
 coverY: 51
 layout:
   cover:

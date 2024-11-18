@@ -1,11 +1,6 @@
 ---
-icon: square-share-nodes
-cover: ../../.gitbook/assets/introduccion-sistemas-operativos.jpg
-coverY: 1
+icon: square-terminal
 layout:
-  cover:
-    visible: true
-    size: full
   title:
     visible: true
   description:
@@ -18,5 +13,5 @@ layout:
     visible: false
 ---
 
-# Sistemas Operativos
+# Herramientas
 

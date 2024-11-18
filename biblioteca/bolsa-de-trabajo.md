@@ -1,4 +1,5 @@
 ---
+icon: excavator
 layout:
   title:
     visible: true

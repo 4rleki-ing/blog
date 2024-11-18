@@ -4,11 +4,6 @@
 
 ## Ciberseguridad
 
-* [Sistemas Operativos](ciberseguridad/quickstart/README.md)
-  * [Windows](ciberseguridad/quickstart/windows.md)
-  * [Linux](ciberseguridad/quickstart/linux/README.md)
-    * [Kali](ciberseguridad/quickstart/linux/kali.md)
-  * [Comandos](ciberseguridad/quickstart/comandos.md)
 * [TryHackMe](ciberseguridad/publish-your-docs/README.md)
   * [Ruta de Aprendizaje](ciberseguridad/publish-your-docs/ruta-de-aprendizaje/README.md)
     * [Introducción a la ciberseguridad](ciberseguridad/publish-your-docs/ruta-de-aprendizaje/introduccion-a-la-ciberseguridad/README.md)
@@ -67,6 +62,15 @@
     * [Cross-Site Scripting (XSS)](ciberseguridad/bug-bounty/vulnerabilidades/cross-site-scripting-xss.md)
   * [Page 1](ciberseguridad/bug-bounty/page-1.md)
 * [Tips](ciberseguridad/tips.md)
+
+## Sistemas Operativos
+
+* [Windows](sistemas-operativos/windows.md)
+* [Linux](sistemas-operativos/linux/README.md)
+  * [Comandos](sistemas-operativos/linux/comandos.md)
+  * [Distros](sistemas-operativos/linux/distros/README.md)
+    * [Kali](sistemas-operativos/linux/distros/kali/README.md)
+      * [Herramientas](sistemas-operativos/linux/distros/kali/herramientas.md)
 
 ## Biblioteca
 

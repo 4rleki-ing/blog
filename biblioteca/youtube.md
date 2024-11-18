@@ -15,3 +15,4 @@ layout:
 
 # Youtube
 
+{% embed url="https://www.youtube.com/playlist?list=PLMd59HZRUmEjsw9gwI9H8nSfJKKObKH8p" %}
