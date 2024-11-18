@@ -1,6 +1,6 @@
 ---
-description: Conoce las diferentes carreras en ciberseguridad.
 icon: display-chart-up
+description: Conoce las diferentes carreras en ciberseguridad.
 layout:
   title:
     visible: true
@@ -16,7 +16,7 @@ layout:
 
 # Carreras en Cibernética
 
-## _Responsable de mantener la seguridad de los datos de una organizaciónResponsable de mantener la seguridad de los datos de una organizaciónResponsable de mantener la seguridad de los datos de una organización_<mark style="color:orange;">Introducción</mark>
+## <mark style="color:orange;">Introducción</mark>
 
 <figure><img src="../../../../.gitbook/assets/Captura de pantalla_17-11-2024_21571_tryhackme.com.jpeg" alt=""><figcaption></figcaption></figure>
 

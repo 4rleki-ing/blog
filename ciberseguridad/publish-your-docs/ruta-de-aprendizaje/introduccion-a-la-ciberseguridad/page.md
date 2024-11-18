@@ -1,8 +1,8 @@
 ---
+icon: shield-halved
 description: >-
   Introducción a la seguridad defensiva y temas relacionados, como inteligencia
   de amenazas, SOC, DFIR, análisis de malware y SIEM.
-icon: shield-halved
 layout:
   title:
     visible: true
@@ -130,7 +130,7 @@ _Malware (software malicioso)_. El software se refiere a programas, documentos y
 * **`Caballo de troya`** es un programa que muestra una función deseable pero esconde una función maliciosa debajo. Por ejemplo, una víctima puede descargar un reproductor de video de un sitio web sospechoso que le da al atacante un control total sobre su sistema.
 * El **`ransomware`** es un programa malicioso que encripta los archivos del usuario. El cifrado hace que los archivos sean ilegibles sin conocer la contraseña de cifrado. El atacante ofrece al usuario la contraseña de cifrado si el usuario está dispuesto a pagar un "rescate".
 
-<figure><img src="../../../../.gitbook/assets/f07ff19c9f0ed7870127e98c6fe15cde.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/f07ff19c9f0ed7870127e98c6fe15cde.png" alt="" width="375"><figcaption></figcaption></figure>
 
 El análisis de malware tiene como objetivo conocer este tipo de programas maliciosos utilizando varios medios:
 
