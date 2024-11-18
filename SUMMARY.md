@@ -71,7 +71,7 @@
 ## Biblioteca
 
 * [Libros](biblioteca/libros.md)
-* [Blogs](biblioteca/blogs.md)
+* [Aprendizaje Constante](biblioteca/aprendizaje-constante.md)
 * [Software](biblioteca/software.md)
 * [Youtube](biblioteca/youtube.md)
 
