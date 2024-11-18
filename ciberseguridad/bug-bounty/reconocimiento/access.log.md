@@ -1,5 +1,5 @@
 ---
-icon: vial-virus
+icon: house-signal
 layout:
   title:
     visible: true
@@ -13,5 +13,8 @@ layout:
     visible: false
 ---
 
-# PentesterLab
+# Access.log
 
+```
+cat access.log | grep " 200 " | cut -d'"' -f2 | cut -d' ' -f2 | sort -u
+```

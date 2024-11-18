@@ -48,10 +48,15 @@
     * [Desarrolle su Carrera en Seguridad Cibernética](ciberseguridad/publish-your-docs/ruta-de-aprendizaje/desarrolle-su-carrera-en-seguridad-cibernetica.md)
   * [Advenimiento Cyber 2024](ciberseguridad/publish-your-docs/advenimiento-cyber-2024.md)
 * [HackTheBox](ciberseguridad/hackthebox.md)
-* [PentesterLab](ciberseguridad/pentesterlab.md)
+* [Pentesting](ciberseguridad/pentesting/README.md)
+  * [OSINT](ciberseguridad/pentesting/osint.md)
+  * [Bypass](ciberseguridad/pentesting/bypass.md)
 * [Bug Bounty](ciberseguridad/bug-bounty/README.md)
   * [Reconocimiento](ciberseguridad/bug-bounty/reconocimiento/README.md)
-    * [Subfinder](ciberseguridad/bug-bounty/reconocimiento/subfinder.md)
+    * [Subdominios](ciberseguridad/bug-bounty/reconocimiento/subdominios.md)
+    * [Access.log](ciberseguridad/bug-bounty/reconocimiento/access.log.md)
+    * [Dorking](ciberseguridad/bug-bounty/reconocimiento/dorking.md)
+    * [Redirección](ciberseguridad/bug-bounty/reconocimiento/redireccion.md)
   * [Vulnerabilidades](ciberseguridad/bug-bounty/vulnerabilidades/README.md)
     * [IDOR](ciberseguridad/bug-bounty/vulnerabilidades/idor.md)
     * [SQL Injection](ciberseguridad/bug-bounty/vulnerabilidades/sql-injection.md)
@@ -60,6 +65,8 @@
     * [Inyección de Comandos al Sistema Operativo](ciberseguridad/bug-bounty/vulnerabilidades/inyeccion-de-comandos-al-sistema-operativo.md)
     * [RCE](ciberseguridad/bug-bounty/vulnerabilidades/rce.md)
     * [Cross-Site Scripting (XSS)](ciberseguridad/bug-bounty/vulnerabilidades/cross-site-scripting-xss.md)
+  * [Page 1](ciberseguridad/bug-bounty/page-1.md)
+* [Tips](ciberseguridad/tips.md)
 
 ## Biblioteca
 
