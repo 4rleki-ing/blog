@@ -1,10 +1,10 @@
 ---
+icon: laptop-code
 description: >-
   Desde los principios fundamentales hasta las técnicas avanzadas, esta hoja de
   ruta proporciona pasos claros y recursos esenciales para ayudarle a
   desarrollar un conjunto sólido de habilidades.
-icon: laptop-code
-cover: ../../.gitbook/assets/Portada.jpg
+cover: ../../../.gitbook/assets/Portada.jpg
 coverY: -13
 layout:
   cover:
@@ -28,7 +28,7 @@ layout:
 
 Esta ruta de aprendizaje le enseñará los conocimientos técnicos previos para iniciarse en la ciberseguridad. Para atacar o defender cualquier tecnología, primero hay que aprender cómo funciona esta tecnología. La ruta de aprendizaje previa a la seguridad es una forma divertida y amigable para principiantes de aprender los conceptos básicos. ¡Su viaje de aprendizaje sobre seguridad cibernética comienza aquí!
 
-* `Introducción a la Ciberseguridad`
+* <mark style="color:yellow;background-color:blue;">`Introducción a la Ciberseguridad`</mark>
   * Introducción a la Seguridad Ofensiva
   * Introducción a la Seguridad Defensiva
   * Carreras en Ciberseguridad
