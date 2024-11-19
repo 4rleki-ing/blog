@@ -128,3 +128,56 @@ Asociado de red certificado por Cisco (CCNA):\
 [https://lnkd.in/dZm-9w7j](https://lnkd.in/dZm-9w7j)\
 [https://lnkd.in/dvVyziU3](https://lnkd.in/dvVyziU3)\
 [https://lnkd.in/gfby3CR2](https://lnkd.in/gfby3CR2)
+
+
+
+Resources to Build Your PenTesting & CTF Skills
+
+Beginner-Friendly Platforms
+
+1. PicoCTF: Great for students and beginners (picoctf.com)
+2. TryHackMe: Interactive labs for various skill levels (tryhackme.com)
+3. RootMe: Practice with real vulnerabilities (root-me.org)
+4. OverTheWire: Classic wargames to build your foundational skills (overthewire.org)
+5. Vulnhub: Download vulnerable machines for offline practice (vulnhub.com)
+6. Hack This Site: Learn WebApp security and Exploitation (hackthisite.org)
+
+Intermediate-Level Platforms
+
+1. Hack The Box: Test your skills on active challenges (hackthebox.com)
+2. Google CTF: Participate in Google's annual CTF (https://lnkd.in/dnwDf8eU)
+3. CMD Challenge: Test your bash and shell command skills (cmdchallenge.com)
+4. PentesterLab: Learn pentesting with hands-on exercises (pentesterlab.com)
+
+Specialized Training
+
+1. Pwn College: Focus on binary exploitation and pwning (pwn.college)
+2. PortSwigger Web Security Academy: Learn about web vulnerabilities (https://lnkd.in/djwymMwA)
+3. CryptoHack: Sharpen your cryptography skills (cryptohack.org)
+4. Guyinatuxedo GitHub: Learn Reverse engineering skills (github.com/guyinatuxedo) (see pinned)
+
+Advanced Platforms
+
+1. Attack-Defense: Realistic attack-defense scenarios (attackdefense.com)
+2. Hacker101 CTF: CTF challenges designed by HackerOne (ctf.hacker101.com)
+3. Komodo Security CTF: Application security-focused CTF (ctf.komodosec.com)
+
+Additional Resources
+
+1. Cybrary Virtual Labs: Free and paid labs for hands-on practice (cybrary.it)
+2. Hacksplaining: Simple explanations of common vulnerabilities (hacksplaining.com/lessons)
+3. OWASP WebGoat: A deliberately vulnerable web app for learning (owasp.org/webgoat)
+
+Communities & Forums
+
+1. Reddit: Follow r/netsec and r/CTF for updates and challenges
+2. CTFTime: Track global CTF events (ctftime.org)
+3. Hack The Box Forums: Discuss CTFs and hacking techniques (forum.hackthebox.com)
+
+Books & Tutorials
+
+1. Penetration Testing: A Hands-On Introduction by Georgia Weidman
+2. CTF Field Guide by Trail of Bits
+3. Open Security Training: Free courses for cybersecurity topics (opensecuritytraining.info)
+4. Hack The Box Academy: Detailed courses for hacking skills (academy.hackthebox.com)
+5. Hackers101: Learn to Hack with their free courses (Hackers101.com)
