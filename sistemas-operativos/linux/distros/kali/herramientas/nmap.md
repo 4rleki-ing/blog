@@ -72,3 +72,45 @@ Los escaneos se realizan en fases, con cada fase termina antes de que comience l
 <mark style="color:green;">**Salida**</mark>**.** Por último, Nmap recopila toda la información y la escribe en la pantalla o en un archivo. Nmap puede escribir salidas en diversos formatos. Su valor predeterminado (formato interactivo). Nmap también ofrece un formato de salida basado en XML, entre otros.
 
 <mark style="color:green;">**Script post-escaneo**</mark>**.** Después de que Nmap haya completado su escaneo y normal, los scripts en esta fase pueden procesar los resultados y entregar Informes finales y estadísticas. Nmap aún no incluye ningún script en esta fase, por lo que solo se ejecuta si el usuario incluye y ejecuta sus propios scripts.
+
+## <mark style="color:orange;">Capítulo 2. Obtener, compilar, instalar y eliminar Nmap</mark>
+
+El primer paso para obtener Nmap es comprobar si ya tenerlo. Muchas distribuciones de sistemas operativos libres (incluyendo la mayoría de las Linux y BSD) vienen con paquetes Nmap, aunque pueden no ser instalado de forma predeterminada.
+
+Para obtener la versión de Nmap que se tiene instalado, se debe de abrir una terminal y pegar el siguiente comando:
+
+```
+nmap --version
+```
+
+Automáticamente mostrará la versión que está instalada; y en caso de no tener instalada la herramienta, también mostrará el mensaje de notificación, para comprobar la versión más reciente tendrá que dirigirse al siguiente sitio: [versiones](https://nmap.org/changelog.html).
+
+## <mark style="color:orange;">Capítulo 3. Detección de host ("Escaneo de ping")</mark>
+
+El primer paso en cualquier reconocimiento de red es reducir el rango de IP a una lista de hosts activos o interesantes. Escaneando cada puerto de cada una de las direcciones IP es lenta y, por lo general, innecesaria.&#x20;
+
+Es posible que los administradores solo estén interesados en los hosts que ejecutan un determinado servicio, mientras que los auditores de seguridad pueden preocuparse por cada uno de los dispositivos con una dirección IP.&#x20;
+
+Un administrador puede sentirse cómodo usando solo un ping ICMP para localizar hosts en su red interna, mientras que un probador de penetración puede usar un conjunto diverso de docenas de sondas en un intento por evadir las restricciones del firewall.
+
+Debido a que las necesidades de descubrimiento de host son tan diversas, Nmap ofrece un amplia variedad de opciones para personalizar las técnicas utilizadas. Los usuarios pueden omitir el paso de ping por completo con un escaneo de lista **`-sL`**; o desactivando ping **`-Pn`**, o involucrar la red con combinaciones arbitrarias de TCP multipuerto sondas SYN/ACK, UDP e ICMP.&#x20;
+
+Nmap ofrece muchas técnicas de ping porque a menudo toma combinaciones cuidadosamente elaboradas para atravesar una serie de firewall y filtros de enrutador que conducen a una red de destino.
+
+### <mark style="color:blue;">Especificación de hosts y redes de destino</mark>
+
+Todo lo que aparece en la línea de comandos de Nmap que no sea una opción se trata como una especificación de host de destino. El caso más simple es especificar una dirección IP de destino o un nombre de host para el escaneo.
+
+#### <mark style="color:yellow;">Entrada de la lista</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">`-iL`</mark>
+
+Escribir una lista enorme de hosts es incómodo en la terminal, sin embargo, es una necesidad común. Por ejemplo, el servidor DHCP podría exportar una lista de 10.000 concesiones actuales que desee analizar. O tal vez desee escanear todas las direcciones IP, _excepto_ aquellas para localizar hosts que utilizan direcciones IP estáticas no autorizadas.&#x20;
+
+Simplemente genere la lista de hosts para escanear y pase ese nombre de archivo a Nmap como un argumento para la opción.&#x20;
+
+```
+nmap -iL directorio.txt
+```
+
+Las entradas pueden estar en cualquier de los formatos aceptados por Nmap en la línea de comandos (dirección IP, nombre de host, CIDR, IPv6 o rangos de octetos). Cada entrada debe estar separada por uno o más espacios, tabulaciones o saltos de línea.
+
+#### <mark style="color:yellow;">Objetivos aleatorios</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">`-iR`</mark>

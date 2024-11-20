@@ -114,3 +114,7 @@ hydra: A brute-force tool for various protocols, e.g., SSH, FTP.
 john: Password cracker for ethical hacking.
 
 aircrack-ng: A suite for Wi-Fi network security assessment
+
+alien
+
+dpkg
