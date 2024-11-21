@@ -114,3 +114,38 @@ nmap -iL directorio.txt
 Las entradas pueden estar en cualquier de los formatos aceptados por Nmap en la línea de comandos (dirección IP, nombre de host, CIDR, IPv6 o rangos de octetos). Cada entrada debe estar separada por uno o más espacios, tabulaciones o saltos de línea.
 
 #### <mark style="color:yellow;">Objetivos aleatorios</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">`-iR`</mark>
+
+En el caso de investigaciones por Internet, es posible que desee elegir objetivos al azar. Esto se hace con la opción **`-iR`**, que toma como argumento el número de IPs a generar.
+
+```
+nmap -iR 50
+```
+
+Nmap omite automáticamente ciertas IPs, tales como como los de rangos de direcciones privadas, multidifusión o no asignadas. El argumento se puede especificar para un argumento interminable escanear.
+
+Si te encuentras aburrido una tarde lluviosa, prueba el siguiente comando para localizar servidores web aleatorios.
+
+```
+nmap -sS -PS80 -iR 0 -p 80
+```
+
+#### <mark style="color:yellow;">Exclusión de objetivos</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">`--exclude`</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">,</mark> <mark style="color:yellow;"></mark><mark style="color:yellow;">`--excludefile archivo.txt`</mark>
+
+Es común tener máquinas que no quieres escanear bajo cualquier circunstancia. Las máquinas pueden ser tan críticas que no correrá ningún riesgo de sufrir una reacción adversa. Es posible que se le culpe por un interrupción coincidente, incluso si el escaneo de Nmap no tuvo nada que ver con eso. O tal vez tenga hardware heredado que se sabe que se bloquea cuando escaneado, pero aún no ha podido arreglarlo o reemplazarlo. O tal vez ciertos rangos de IP representan empresas subsidiarias, clientes o Socios que no está autorizado a examinar.&#x20;
+
+Los consultores a menudo no lo hacen quieren que su propia máquina se incluya en un escaneo de las redes de sus clientes. Cualquiera que sea el motivo, puede excluir hosts o redes completas con la opción **`--exclude`**.&#x20;
+
+Simplemente pase la opción a lista separada por comas de destinos excluidos y bloques de red mediante el método sintaxis normal de Nmap.&#x20;
+
+```
+nmap 192.168.0.* --exclude 192.168.0.10,20,30
+```
+
+Alternativamente, puede crear un archivo de excluidos hosts/redes y pasarlo a Nmap con la opción.
+
+```
+nmap 192.168.0.* --excludefile hosts.txt
+```
+
+### <mark style="color:yellow;">Encontrar las direcciones IP de una organización</mark>
+
