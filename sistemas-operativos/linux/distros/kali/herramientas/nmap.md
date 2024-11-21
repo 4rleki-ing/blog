@@ -149,3 +149,8 @@ nmap 192.168.0.* --excludefile hosts.txt
 
 ### <mark style="color:yellow;">Encontrar las direcciones IP de una organización</mark>
 
+Nmap automatiza muchos aspectos del escaneo de red, pero aún así debe decirle qué redes escanear. Es importante tener cuidado investigar los bloques de red objetivo antes de escanearlos. Incluso si se llevará a cabo una prueba de penetración y el cliente le dio una lista de sus bloques, es importante verificarlos dos veces. Los clientes a veces tienen registros desactualizados o simplemente los escriben mal. En muchos casos, se comienza con solo el nombre de dominio de una empresa.
+
+#### <mark style="color:yellow;">Trucos de DNS</mark>
+
+El propósito principal del DNS es resolver nombres de dominio en direcciones IP, por lo que es un lugar lógico para comenzar. En el Ejemplo 3.1, utilizo el comando **host** de Linux para consultar algunos tipos de registros DNS comunes.
