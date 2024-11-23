@@ -154,3 +154,42 @@ Nmap automatiza muchos aspectos del escaneo de red, pero aún así debe decirle 
 #### <mark style="color:yellow;">Trucos de DNS</mark>
 
 El propósito principal del DNS es resolver nombres de dominio en direcciones IP, por lo que es un lugar lógico para comenzar. En el Ejemplo 3.1, utilizo el comando **host** de Linux para consultar algunos tipos de registros DNS comunes.
+
+```
+┌──(nato㉿kali)-[~]
+└─$ host -t ns nmap.org
+nmap.org name server ns1.linode.com.
+nmap.org name server ns2.linode.com.
+nmap.org name server ns3.linode.com.
+nmap.org name server ns4.linode.com.
+nmap.org name server ns5.linode.com.
+```
+
+```
+┌──(nato㉿kali)-[~]
+└─$ host -t a nmap.org
+nmap.org has address 50.116.1.184
+```
+
+```
+┌──(nato㉿kali)-[~]
+└─$ host -t aaaa nmap.org
+nmap.org has no AAAA record
+```
+
+```
+┌──(nato㉿kali)-[~]
+└─$ host -t mx nmap.org
+nmap.org mail is handled by 5 alt1.aspmx.l.google.com.
+nmap.org mail is handled by 10 aspmx2.googlemail.com.
+nmap.org mail is handled by 1 aspmx.l.google.com.
+nmap.org mail is handled by 5 alt2.aspmx.l.google.com.
+nmap.org mail is handled by 10 aspmx3.googlemail.com.
+```
+
+```
+┌──(nato㉿kali)-[~]
+└─$ host -t soa nmap.org
+nmap.org has SOA record ns1.linode.com. hostmaster.insecure.org. 2021000013 14400 14400 1209600 3600
+```
+

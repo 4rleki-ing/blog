@@ -71,6 +71,7 @@
   * [Distros](sistemas-operativos/linux/distros/README.md)
     * [Kali](sistemas-operativos/linux/distros/kali/README.md)
       * [Herramientas](sistemas-operativos/linux/distros/kali/herramientas/README.md)
+        * [Host](sistemas-operativos/linux/distros/kali/herramientas/host.md)
         * [Nmap](sistemas-operativos/linux/distros/kali/herramientas/nmap.md)
 
 ## Biblioteca
