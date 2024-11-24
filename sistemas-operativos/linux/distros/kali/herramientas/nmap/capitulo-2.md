@@ -12,7 +12,9 @@ layout:
     visible: false
 ---
 
-# Capítulo 2. Obtener, compilar, instalar y eliminar Nmap
+# Capítulo 2
+
+## <mark style="color:orange;">Obtener, compilar, instalar y eliminar Nmap</mark>
 
 El primer paso para obtener Nmap es comprobar si ya tenerlo. Muchas distribuciones de sistemas operativos libres (incluyendo la mayoría de las Linux y BSD) vienen con paquetes Nmap, aunque pueden no ser instalado de forma predeterminada.
 

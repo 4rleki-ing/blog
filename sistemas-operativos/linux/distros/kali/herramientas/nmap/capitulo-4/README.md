@@ -12,7 +12,9 @@ layout:
     visible: false
 ---
 
-# Capítulo 4. Descripción general del escaneo de puertos
+# Capítulo 4
+
+## <mark style="color:orange;">Descripción general del escaneo de puertos</mark>
 
 ### <mark style="color:blue;">Introducción</mark>
 
@@ -364,3 +366,89 @@ Le dice a Nmap que se salte la prueba de ping y simplemente escanee todos los ho
 `--reason`
 
 Agrega una columna a la tabla de puertos interesantes que describe por qué Nmap clasificó un puerto como lo hizo.
+
+### Escaneo de IPv6 (`-6`)
+
+Desde 2002, Nmap ha ofrecido soporte IPv6 para sus productos más populares. Funciones. En particular, escaneo de ping (solo TCP), conexión el escaneo y la detección de versiones son compatibles con IPv6. La sintaxis del comando es lo mismo que de costumbre, excepto que también agrega la opción. Por supuesto, debe utilizar la sintaxis IPv6 si especifica una dirección en lugar de un nombre de host. Una dirección puede parecerse a , por lo que los nombres de host se recomiendan. [En el ejemplo 4.4](https://nmap.org/book/port-scanning-ipv6.html#port-scanning-ex-ipv6) se muestra un Sesión típica de escaneo de puertos. La salida tiene el mismo aspecto que de costumbre lo hace, y la dirección IPv6 en la línea de "puertos interesantes" es el único indicio de IPv6.`-63ffe:7501:4819:2000:210:f3ff:fe03:14d0`
+
+Ejemplo 4.4. Un simple escaneo de IPv6
+
+Si bien IPv6 no ha conquistado el mundo exactamente, se uso significativo en algunos países y en la mayoría de los países Los sistemas operativos lo admiten. Para usar Nmap con IPv6, tanto la fuente y el destino de su escaneo debe estar configurado para IPv6. Si su proveedor de servicios de Internet (como la mayoría de ellos) no le asigna direcciones IPv6, gratis Los corredores de túneles están ampliamente disponibles y funcionan bien con Nmap. Utilizo el servicio gratuito de intermediario de túneles IPv6 en [`http://www.tunnelbroker.net`](http://www.tunnelbroker.net/). Se enumeran otros agentes de túneles [en Wikipedia](http://en.wikipedia.org/wiki/List_of_IPv6_tunnel_brokers). Los túneles 6to4 son otro túnel popular, gratuito acercarse.
+
+Los sistemas que admiten IPv6 no siempre tienen sus IPv4 e IPv6 Reglas de firewall sincronizadas. [la sección llamada "Ataques IPv6"](https://nmap.org/book/firewall-subversion.html#defeating-firewalls-ipv6) muestra un ejemplo de la vida real de llegar a puertos a través de IPv6 que son filtrado en IPv4.
+
+### SOLUCIÓN: Escanee una red grande en busca de un determinado puerto TCP abierto
+
+#### Problema
+
+Desea encontrar rápidamente todas las máquinas de una red que tienen un cierto puerto TCP abierto. Por ejemplo, después de un nuevo Microsoft IIS vulnerabilidad, es posible que desee buscar todas las máquinas con TCP puerto 80 abierto y asegúrese de que no estén ejecutando un versión de ese software. O si investiga una caja comprometida y descubra que el atacante dejó una puerta trasera ejecutándose en el puerto 31337, escaneando toda la red para ese puerto podría identificar rápidamente otros sistemas comprometidos. Más tarde se realizaría un análisis completo (de todos los puertos).
+
+#### Solución
+
+La forma sencilla es ejecutar:
+
+**nmap -Pn -p**_**`<portnumber>`**_**&#x20;-oG&#x20;**_**`<logfilename.gnmap>`**_ _**`<redes de destino>`**_
+
+A continuación, se muestra un ejemplo concreto de búsqueda de IP 4096 para servidores web (puerto 80 abierto):
+
+**nmap -Pn -p80 -oG logs/pb-port80scan-%D.gnmap 216.163.128.0/20**
+
+La "%D" en el nombre del archivo se sustituye por la fecha numérica en la que se ejecutó el análisis (por ejemplo, "090107" el 1 de septiembre de 2007). Si bien este comando de escaneo funciona, un poco de esfuerzo para elegir el momento adecuado Los valores de la red que se está analizando reducen el tiempo de exploración substancialmente. El escaneo anterior tardó 1.236 segundos, mientras que el optimizado La versión a continuación proporcionó los mismos resultados en 869 segundos:
+
+**nmap -T4 -Pn -p80 --max-rtt-timeout 200ms --initial-rtt-timeout 150ms --min-hostgroup 512 -oG logs/pb-port80scan2-%D.gnmap 216.163.128.0/20**
+
+Y gran parte de ese tiempo se dedica a hacer resolución de DNS inverso. Excluyendo eso agregando a la línea de comandos anterior Reduce el tiempo de análisis del host 4096 a 193 segundos. Ser paciente durante tres minutos es mucho más fácil que los 21 minutos tomados antes.`-n`
+
+Los comandos anteriores almacenan los resultados en formato grepable en el archivo especificado. Un simple comando egrep encontrará las máquinas con el puerto 80 abierto:
+
+**egrep '\[^0-9]80/open' logs/pb-port80scan2-\*.gnmap**
+
+El patrón egrep está precedido por \[^0-9] para evitar errores falsos. puertos coincidentes como el 3180. Por supuesto, eso no puede suceder ya que estamos solo escaneando el puerto 80, pero es una buena práctica recordar para Escaneos de varios puertos. Si solo quieres las direcciones IP y nada más, Canalice la salida de egrep a **awk '{imprimir $2}'**.
+
+#### Discusión
+
+A veces, una historia es la mejor manera de entender las decisiones, como la forma en que decidí las líneas de comandos en la sección de soluciones. Estaba aburrido en casa y comencé a explorar la red de una revista popular llamada _Playboy_. Su sitio principal incluye un gran tesoro de imágenes, pero la mayoría están encerradas detrás de un sistema de autenticación de suscripción paga. Tenía curiosidad por saber si podía encontrar algún otro sistema en su red que ofreciera imágenes de forma gratuita. Supuse que podrían tener servidores de ensayo o desarrollo que se basan en la oscuridad en lugar de la autenticación con contraseña. Si bien estos servidores teóricamente podrían escuchar en cualquier número de puerto, lo más probable es que sea el puerto TCP 80. Así que decido escanear toda su red en busca de ese puerto abierto lo más rápido posible.
+
+El primer paso es determinar qué direcciones IP escanear. Realizo una búsqueda whois de la Registro Americano de Números de Internet (ARIN) para organizaciones llamadas Playboy. Los resultados se muestran en el [Ejemplo 4.5](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-whois-playboy).
+
+Esto muestra 4096 direcciones IP (el rango neto 216.163.128.0/20) registradas a Playboy. Usando las técnicas discutidas en [la sección llamada "Encontrar las direcciones IP de una organización",](https://nmap.org/book/host-discovery-find-ips.html) podría haber encontrado muchas más netblocks que controlan, pero las IP 4096 son suficiente para este ejemplo.
+
+Siguiente quiero estimar latencia a estas máquinas, de modo que Nmap sabrá qué esperar. Esto no es necesario, pero alimentar Nmap Los valores de temporización adecuados pueden acelerarlo. Esto es particularmente cierto para escaneos de un solo puerto, como este. Nmapa no recibe suficientes respuestas de cada host para estimar la latencia y la tasa de caída de paquetes, por lo que lo ayudaré en el línea de comandos. Mi primer pensamiento es hacer ping a su servidor web principal, ya que que se muestra en [el Ejemplo 4.6](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-www-playboy-ping).`-Pn`
+
+Ejemplo 4.6. Hacer ping al servidor web de Playboy para obtener una estimación de latencia
+
+El tiempo máximo de ida y vuelta es de 58 milisegundos. Desgraciadamente esta dirección IP (209.247.228.201) no está dentro de 216.163.128.0/20 netblock que deseo escanear. Normalmente agregaría este nuevo bloque de red a la lista de objetivos, pero ya he decidido limitar mi escaneo a la IP 4096 originales. Estos tiempos son probablemente perfectamente buenos para usar, pero encontrar valores reales de las direcciones IP en la red de destino sería incluso mejor. Utilizo dig para obtener Playboy's registros DNS públicos de un servidor de nombres que se muestran en el whois anterior consulta. El resultado se muestra en [el Ejemplo 4.7](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-www-playboy-dig).
+
+Ejemplo 4.7. Indagando en los registros DNS de Playboy
+
+La consulta DNS revela dos servidores MX (correo) dentro del bloque de red 216.163.128.0/20 de destino. Dado que los nombres implican que están en diferentes regiones (Chicago y Los Ángeles), decido probarlos a ambos para ver la latencia. Los resultados **del ping** se muestran en [el Ejemplo 4.8](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-www-playboy-mxping).`mx.chimx.la`
+
+Ejemplo 4.8. Hacer ping a los servidores MX
+
+Bueno, ¡ese intento fue un fracaso miserable! Los anfitriones parecen estar bloqueando los paquetes de ping ICMP. Dado que son servidores de correo, deben tengo el puerto TCP 25 abierto, así que intento de nuevo usando [hping2](http://www.hping.org/) para realizar un TCP ping contra el puerto 25, como se muestra en el [Ejemplo 4.9](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-playboy-mxping-tcp).
+
+Ejemplo 4.9. TCP haciendo ping a los servidores MX
+
+Estos son los resultados que estaba buscando. El anfitrión de Los Ángeles nunca tarda más de 16 milisegundos en responder, mientras que el de Chicago tarda hasta 62 milisegundos. Esto no es sorprendente, dado que estoy sondeo desde una máquina en California. Vale la pena ser cauteloso, y la latencia puede aumentar durante el escaneo pesado, así que decido dejar que Nmap Espere hasta 200 milisegundos para recibir respuestas. Haré que comience con un tiempo de espera de 150 ms. Así que le paso las opciones. Para establecer un valor generalmente agresivo modo de temporización, especifico al principio de la línea.`--max-rtt-timeout 200ms --initial-rtt-timeout 150ms-T4`
+
+Dado que valoro minimizar el tiempo de finalización de todo el escaneo Minimizar la cantidad de tiempo antes del primer lote de resultados del host , especifico un tamaño de grupo de escaneo grande. La opción se especifica de modo que al menos 512 Las direcciones IP se analizarán en paralelo (cuando sea posible). Usando un factor del tamaño de la red de destino (4096) evita que la pequeña y menor eficiente bloque de 96 hosts que ocurriría al final si especifico . Todos estos problemas de tiempo son explicado con mucha más profundidad en [el Capítulo 6, _Optimización del rendimiento de Nmap_](https://nmap.org/book/performance.html).`--min-hostgroup 512--min-hostgroup 500`
+
+No hay necesidad de perder el tiempo con una etapa de ping previa, ya que un El ping tardaría tanto como el propio análisis de un solo puerto. Por lo tanto, se especifica para deshabilitar esa etapa. Substancial El tiempo se ahorra omitiendo la resolución de DNS inverso con el argumento. De lo contrario, con el escaneo de ping deshabilitado, Nmap intentaría buscar todas las IP 4096. Soy yo buscando servidores web, por lo que solicito el puerto 80 con . Por supuesto, echaré de menos cualquier servidor HTTP que se esté ejecutando en puertos no estándar como 81 u 8080. Servidores SSL en el puerto 443 tampoco se encontrará. Uno podría agregarlos a la opción, pero incluso un puerto más duplicaría el tiempo de escaneo, que es aproximadamente proporcional al número de puertos escaneados.`-Pn-n-p80-p`
+
+A la última opción le sigue la opción nombre de archivo en el que quiero que se almacenen los resultados grepable. Añado el objetivo network al comando, luego presione enter para ejecutar Nmap. La salida se muestra en [el Ejemplo 4.10](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-playboy-port80-scan).`-oG`
+
+Ejemplo 4.10. Iniciar el análisis
+
+Nmap escanea las 4096 IP en aproximadamente tres minutos. Lo normal La salida muestra un montón de puertos en el estado. Es probable que la mayoría de esas direcciones IP no sean hosts activos, es decir, el puerto simplemente aparece filtrado porque Nmap no recibe ninguna respuesta a su SYN Sondas. Obtengo la lista de servidores web con un simple **egrep** en el archivo de salida, como se muestra en [el Ejemplo 4.11](https://nmap.org/book/solution-find-open-port.html#port-scanning-ex-playboy-port80-grep).`filtered`
+
+Ejemplo 4.11. Egrep para puertos abiertos
+
+espués de todo ese esfuerzo, solo dos servidores web accesibles son ¡Encontrado de 4096 IPs! A veces eso sucede. El primero, 216.163.140.20 (sin nombre DNS inverso) me lleva a un Microsoft Outlook Servidor de acceso web (webmail). Eso podría emocionarme si estuviera tratando de comprometer su red, pero no es gratificante ahora. El siguiente servidor (nombre inverso mirrors.playboy.com) es mucho mejor. Ofrece a aquellos ¡gigabytes de imágenes gratis que estaba esperando! En particular, ofrece imágenes ISO de Linux, así como FreeBSD, CPAN y ¡Archivos Apache! Descargo las últimas ISOs de Fedora Core en un respetables 6 Mbps. La abundancia de ancho de banda en Playboy es No es de extrañar. Más tarde escaneo otros bloques de red de Playboy, encontrando docenas de servidores web más, aunque parte de su contenido es inapropiado para este libro.
+
+Si bien esta es una razón inusual para el escaneo de puertos, un solo puerto Los barridos son comunes para muchos otros propósitos expresados anteriormente. El Las técnicas descritas aquí se pueden aplicar fácilmente a cualquier TCP de un solo puerto barrer.
+
+#### Consulte también
+
+La detección de versiones se puede utilizar para encontrar aplicaciones específicas que estén escuchando en una red. Por ejemplo, podría buscar una determinada versión vulnerable de OpenSSH en lugar de buscar todos los hosts con el puerto 22 abierto. Esto también es útil para escaneos UDP de un solo puerto, ya que las técnicas de esta solución solo funcionan bien para TCP. Instrucciones se proporcionan en [la sección denominada "SOLUCIÓN: Buscar todos los servidores que ejecutan una versión de aplicación insegura o no estándar".](https://nmap.org/book/vscan-find-service-fast.html)
+
+[El Capítulo 6, _Optimización del rendimiento de Nmap, analiza_](https://nmap.org/book/performance.html) la velocidad de escaneo optimización en mucha más profundidad.

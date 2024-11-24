@@ -12,9 +12,11 @@ layout:
     visible: false
 ---
 
-# Capítulo 1. Primeros pasos con Nmap
+# Capítulo 1
 
-Nmap ("Network Mapper") es una utilidad gratuita y de código abierto para Exploración de redes y auditoría de seguridad. Muchos sistemas y redes Los administradores también lo encuentran útil para tareas como la red inventario, la administración de programas de actualización de servicio y la supervisión del host o Tiempo de actividad del servicio. Nmap utiliza paquetes IP sin procesar de formas novedosas para determinar qué hosts están disponibles en la red, qué servicios (aplicación nombre y versión) que ofrecen esos hosts, qué sistemas operativos (y versiones del sistema operativo) que se están ejecutando, qué tipo de paquete Se utilizan filtros/cortafuegos, y docenas de otras características. Eso fue diseñado para escanear rápidamente grandes redes, pero funciona bien contra Anfitriones individuales. Nmap se ejecuta en todos los principales sistemas operativos de computadoras, y Están disponibles tanto la versión de consola como la gráfica.
+## <mark style="color:orange;">Primeros pasos con Nmap</mark>
+
+`Nmap ("Network Mapper")` es una utilidad gratuita y de código abierto para Exploración de redes y auditoría de seguridad. Muchos sistemas y redes Los administradores también lo encuentran útil para tareas como la red inventario, la administración de programas de actualización de servicio y la supervisión del host o Tiempo de actividad del servicio. Nmap utiliza paquetes IP sin procesar de formas novedosas para determinar qué hosts están disponibles en la red, qué servicios (aplicación nombre y versión) que ofrecen esos hosts, qué sistemas operativos (y versiones del sistema operativo) que se están ejecutando, qué tipo de paquete Se utilizan filtros/cortafuegos, y docenas de otras características. Eso fue diseñado para escanear rápidamente grandes redes, pero funciona bien contra Anfitriones individuales. Nmap se ejecuta en todos los principales sistemas operativos de computadoras, y Están disponibles tanto la versión de consola como la gráfica.
 
 El primer paso en una evaluación de vulnerabilidades es la red descubrimiento. Esta etapa de reconocimiento determina qué dirección IP rangos que está utilizando el objetivo, qué hosts están disponibles, qué servicios que ofrecen esos hosts, detalles generales de la topología de la red y qué Las políticas de firewall/filtrado están en vigor.
 

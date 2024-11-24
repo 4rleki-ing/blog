@@ -12,7 +12,9 @@ layout:
     visible: false
 ---
 
-# Capítulo 3. Detección de host ("Escaneo de ping")
+# Capítulo 3
+
+## <mark style="color:orange;">Detección de host ("Escaneo de ping")</mark>
 
 El primer paso en cualquier reconocimiento de red es reducir el rango de IP a una lista de hosts activos o interesantes. Escaneando cada puerto de cada una de las direcciones IP es lenta y, por lo general, innecesaria.&#x20;
 
