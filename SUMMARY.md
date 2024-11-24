@@ -71,8 +71,19 @@
   * [Distros](sistemas-operativos/linux/distros/README.md)
     * [Kali](sistemas-operativos/linux/distros/kali/README.md)
       * [Herramientas](sistemas-operativos/linux/distros/kali/herramientas/README.md)
+        * [Búsqueda DNS (Online)](sistemas-operativos/linux/distros/kali/herramientas/busqueda-dns-online.md)
         * [Host](sistemas-operativos/linux/distros/kali/herramientas/host.md)
-        * [Nmap](sistemas-operativos/linux/distros/kali/herramientas/nmap.md)
+        * [Dig](sistemas-operativos/linux/distros/kali/herramientas/dig.md)
+        * [Nmap](sistemas-operativos/linux/distros/kali/herramientas/nmap/README.md)
+          * [Capítulo 1. Primeros pasos con Nmap](sistemas-operativos/linux/distros/kali/herramientas/nmap/capitulo-1.-primeros-pasos-con-nmap.md)
+          * [Capítulo 2. Obtener, compilar, instalar y eliminar Nmap](sistemas-operativos/linux/distros/kali/herramientas/nmap/capitulo-2.-obtener-compilar-instalar-y-eliminar-nmap.md)
+          * [Capítulo 3. Detección de host ("Escaneo de ping")](sistemas-operativos/linux/distros/kali/herramientas/nmap/capitulo-3.-deteccion-de-host-escaneo-de-ping.md)
+          * [Capítulo 4. Descripción general del escaneo de puertos](sistemas-operativos/linux/distros/kali/herramientas/nmap/capitulo-4.-descripcion-general-del-escaneo-de-puertos/README.md)
+            * [nmap-services](sistemas-operativos/linux/distros/kali/herramientas/nmap/capitulo-4.-descripcion-general-del-escaneo-de-puertos/nmap-services.md)
+        * [Page](sistemas-operativos/linux/distros/kali/herramientas/page.md)
+        * [Ettercap](sistemas-operativos/linux/distros/kali/herramientas/ettercap.md)
+        * [Dsniff](sistemas-operativos/linux/distros/kali/herramientas/dsniff.md)
+        * [Netstat](sistemas-operativos/linux/distros/kali/herramientas/netstat.md)
 
 ## Biblioteca
 
