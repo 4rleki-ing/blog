@@ -3,7 +3,7 @@ icon: mobile-signal
 description: >-
   La guía oficial del proyecto Nmap para el descubrimiento de redes y el escaneo
   de seguridad.
-cover: ../../../../../../.gitbook/assets/NMAP.jpg
+cover: ../../../../../../../.gitbook/assets/NMAP.jpg
 coverY: -10.841930116472545
 layout:
   cover:
@@ -33,13 +33,13 @@ La página web de Nmap en [`https://nmap.org`](https://nmap.org/) no es solo par
 
 Este libro asume una familiaridad básica con TCP/IP y Conceptos de redes.
 
-<figure><img src="../../../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Figura 1. Encabezado IPv4</p></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Figura 1. Encabezado IPv4</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Figura 2. Encabezado TCP</p></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Figura 2. Encabezado TCP</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Figura 3. Encabezado UDP</p></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>Figura 3. Encabezado UDP</p></figcaption></figure>
 
-<figure><img src="../../../../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Figura 4. Encabezado ICMP</p></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Figura 4. Encabezado ICMP</p></figcaption></figure>
 
 
 

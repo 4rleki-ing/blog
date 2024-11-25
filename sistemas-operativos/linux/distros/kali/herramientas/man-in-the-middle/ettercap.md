@@ -1,11 +1,11 @@
 ---
+icon: spider-black-widow
 description: >-
   Ettercap es una suite completa para ataques de hombre en el medio. Cuenta con
   olfateo de conexiones en vivo, filtrado de contenido sobre la marcha y muchos
   otros trucos interesantes.
-icon: spider-black-widow
 cover: >-
-  ../../../../../.gitbook/assets/Captura de
+  ../../../../../../.gitbook/assets/Captura de
   pantalla_24-11-2024_0206_www.ettercap-project.org.jpeg
 coverY: 0
 layout:

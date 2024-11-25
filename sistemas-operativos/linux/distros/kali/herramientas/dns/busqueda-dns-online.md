@@ -1,8 +1,8 @@
 ---
+icon: globe-pointer
 description: >-
   Se muestra una serie de servicios en línea donde podemos encontrar respuestas
   de DNS
-icon: globe-pointer
 layout:
   title:
     visible: true
@@ -24,4 +24,4 @@ layout:
 https://searchdns.netcraft.com/?host
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
