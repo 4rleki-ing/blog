@@ -18,3 +18,6 @@ layout:
 
 # BBQSQL
 
+```
+git clone https://github.com/CiscoCXSecurity/bbqsql.git
+```
