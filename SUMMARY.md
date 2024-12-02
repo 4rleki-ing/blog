@@ -59,6 +59,7 @@
       * [Soluciones de Seguridad](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/ruta-de-aprendizaje/soluciones-de-seguridad.md)
       * [Herramientas de Seguridad Defensiva](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/ruta-de-aprendizaje/herramientas-de-seguridad-defensiva.md)
       * [Desarrolle su Carrera en Seguridad Cibernética](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/ruta-de-aprendizaje/desarrolle-su-carrera-en-seguridad-cibernetica.md)
+      * [Ruta de Aprendizaje](https://4rlekiing.gitbook.io/ruta-de-aprendizaje/)
     * [Advenimiento Cyber 2024](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/advenimiento-cyber-2024.md)
 * [Malware](ciberseguridad/malware.md)
 * [Pentesting](ciberseguridad/pentesting/README.md)
