@@ -45,8 +45,8 @@
 
 * [Windows](sistemas-operativos/windows.md)
 * [Linux](sistemas-operativos/linux/README.md)
-  * [Comandos](sistemas-operativos/linux/comandos.md)
-  * [Distros](sistemas-operativos/linux/distros.md)
+  * [Distros](sistemas-operativos/linux/distros/README.md)
+    * [Kali](https://4rlekiing.gitbook.io/kali/)
 
 ## Biblioteca
 
