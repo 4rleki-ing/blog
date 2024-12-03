@@ -1,5 +1,5 @@
 ---
-icon: hashtag
+icon: hashtag-lock
 description: >-
   Bash (Bourne-Again Shell) es la interfaz de línea de comandos (CLI)
   predeterminada en la mayoría de las  distribuciones de Linux. Es el intérprete

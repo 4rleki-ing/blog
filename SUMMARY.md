@@ -66,13 +66,7 @@
 
 * [Python](programacion/python.md)
 * [Bash](programacion/bash/README.md)
-  * [Bandit](programacion/bash/bandit.md)
-  * [Nivel 0](programacion/bash/nivel-0.md)
-  * [Nivel 0 de Bandit → Nivel 1](programacion/bash/nivel-0-de-bandit-55g-nivel-1.md)
-  * [Page 4](programacion/bash/page-4.md)
-  * [Page 3](programacion/bash/page-3.md)
-  * [Page 2](programacion/bash/page-2.md)
-  * [Page 1](programacion/bash/page-1.md)
+  * [Overthewire](https://4rlekiing.gitbook.io/0v3rth3w1r3/)
 
 ## Cursos
 
