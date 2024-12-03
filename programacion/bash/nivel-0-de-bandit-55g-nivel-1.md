@@ -1,10 +1,9 @@
 ---
-icon: hashtag
 layout:
   title:
     visible: true
   description:
-    visible: true
+    visible: false
   tableOfContents:
     visible: true
   outline:
@@ -13,5 +12,5 @@ layout:
     visible: false
 ---
 
-# Bash
+# Nivel 0 de Bandit → Nivel 1
 
