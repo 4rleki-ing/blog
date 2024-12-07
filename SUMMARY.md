@@ -38,8 +38,7 @@
   * [Modelo OSI](ciberseguridad/redes/modelo-osi.md)
   * [Protocolos de red](ciberseguridad/redes/protocolos-de-red/README.md)
     * [SSH](ciberseguridad/redes/protocolos-de-red/ssh.md)
-* [Servidores](ciberseguridad/servidores/README.md)
-  * [FTP](ciberseguridad/servidores/ftp.md)
+* [Servidores](https://4rlekiing.gitbook.io/servidores/)
 
 ## Sistemas Operativos
 
