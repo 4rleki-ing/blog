@@ -25,7 +25,6 @@
   * [TryHackMe](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/README.md)
     * [Ruta de Aprendizaje](https://4rlekiing.gitbook.io/ruta-de-aprendizaje/)
     * [Advenimiento Cyber 2024](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/advenimiento-cyber-2024.md)
-* [Malware](ciberseguridad/malware.md)
 * [Pentesting](ciberseguridad/pentesting/README.md)
   * [Bypass](ciberseguridad/pentesting/bypass.md)
   * [Marcos](ciberseguridad/pentesting/marcos/README.md)
@@ -33,12 +32,9 @@
     * [MITRE ATT\&CK](ciberseguridad/pentesting/marcos/mitre-att-and-ck.md)
   * [OSINT](ciberseguridad/pentesting/osint.md)
   * [Web scraping](ciberseguridad/pentesting/web-scraping.md)
-* [Redes](ciberseguridad/redes/README.md)
-  * [Certificados SSL](ciberseguridad/redes/certificados-ssl.md)
-  * [Modelo OSI](ciberseguridad/redes/modelo-osi.md)
-  * [Protocolos de red](ciberseguridad/redes/protocolos-de-red/README.md)
-    * [SSH](ciberseguridad/redes/protocolos-de-red/ssh.md)
+* [Redes](https://4rlekiing.gitbook.io/redes/)
 * [Servidores](https://4rlekiing.gitbook.io/servidores/)
+* [Malware](https://4rlekiing.gitbook.io/m4lw4r3/)
 
 ## Sistemas Operativos
 

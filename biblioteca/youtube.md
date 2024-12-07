@@ -15,4 +15,11 @@ layout:
 
 # Youtube
 
-{% embed url="https://www.youtube.com/playlist?list=PLMd59HZRUmEjsw9gwI9H8nSfJKKObKH8p" %}
+<mark style="color:orange;">bertura general de ciberseguridad</mark>
+
+{% embed url="https://www.youtube.com/@hak5" %}
+
+{% embed url="https://www.youtube.com/@ACILearning" %}
+
+{% embed url="https://www.youtube.com/@dccybersec" %}
+
