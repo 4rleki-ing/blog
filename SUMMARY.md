@@ -20,6 +20,7 @@
     * [Inyección de Comandos al Sistema Operativo](ciberseguridad/bug-bounty/vulnerabilidades/inyeccion-de-comandos-al-sistema-operativo.md)
     * [RCE](ciberseguridad/bug-bounty/vulnerabilidades/rce.md)
     * [Cross-Site Scripting (XSS)](ciberseguridad/bug-bounty/vulnerabilidades/cross-site-scripting-xss.md)
+  * [Vulnerabilidades](https://4rlekiing.gitbook.io/vuln3r4bilid4d3s/)
 * [Plataformas de Aprendizaje](ciberseguridad/plataformas-de-aprendizaje/README.md)
   * [HackTheBox](ciberseguridad/plataformas-de-aprendizaje/hackthebox.md)
   * [TryHackMe](ciberseguridad/plataformas-de-aprendizaje/publish-your-docs/README.md)
