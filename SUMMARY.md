@@ -44,6 +44,7 @@
   * [Comandos](https://4rlekiing.gitbook.io/comandos-linux/)
   * [Distros](sistemas-operativos/linux/distros/README.md)
     * [Kali](https://4rlekiing.gitbook.io/kali/)
+* [Linux](https://4rlekiing.gitbook.io/linux/)
 
 ## Biblioteca
 
